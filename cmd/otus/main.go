@@ -10,7 +10,8 @@ func main() {
 	logrus.Info("Hello World")
 
 	port := os.Getenv("PORT")
-	if len(port) == 0 {
+	if port == "" {
 		logrus.Fatal("Port is not set")
 	}
+
 }
